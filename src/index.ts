@@ -1,4 +1,5 @@
-import  ShuttlerFx, {IShuttlerModel,ShuttlerState}  from './ShuttlerFramework';
+import Potter from './Potter';
+import PotterState from "./PotterState";
 
-export default ShuttlerFx;
-export {IShuttlerModel,ShuttlerState}
+export default Potter;
+export {PotterState}
