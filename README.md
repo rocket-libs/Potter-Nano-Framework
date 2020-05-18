@@ -205,7 +205,7 @@ potter.pushToState({mounted: true});
 potter.pushToModel({displayLabel:"Foo"});
 potter.pushToRepository({allTodos: []});
 
-/// Calling any of the above triggers the useEffect hook in ```TodoIndex``` and potter figures out whether to request a rerender from React.
+/// Calling any of the above triggers the useEffect hook in TodoIndex and potter figures out whether to request a rerender from React.
 
 ```
 
