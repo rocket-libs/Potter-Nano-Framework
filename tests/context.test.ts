@@ -10,10 +10,10 @@ class NotModel{
 }
 
 class TestRepo{
-    notModes : NotModel[];
-    models: TestModel[];
-    numbers: number[];
-    stringValue: string;
+    notModels : NotModel[] | null = null;
+    models: TestModel[] | null = null;
+    numbers: number[] | null = null;
+    stringValue: string = "";
 }
 
 class Context extends PotterContext<TestRepo,TestModel>{
