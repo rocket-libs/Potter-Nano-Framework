@@ -28,6 +28,20 @@ export default abstract class Potter<TRepository,TModel,TState extends PotterSta
     public get hasBroadcastListeners(): boolean {
         return this.shuttler.hasBroadcastListeners;
     }
+
+    /**
+     * Resets the model to an empty object
+     */
+    public clearModel(){
+        this.shuttler.clearModel();
+    }
+
+    /**
+     * Resets the repository to an empty object
+     */
+    public clearRepository(){
+        this.context.repository = {} as TRepository;
+    }
    
 
     /**
