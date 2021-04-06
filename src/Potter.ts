@@ -1,6 +1,7 @@
 import PotterState from "./PotterState";
 import Shuttler from "shuttlerjs";
 import { PotterContext } from "./PotterContext";
+import { Listener } from "shuttlerjs/dist/Shuttler";
 
 
 export interface IPotter<TRepository,TModel>{
@@ -12,6 +13,14 @@ export default abstract class Potter<TRepository,TModel,TState extends PotterSta
     private shuttler: Shuttler<PotterContext<TRepository,TModel>>;
     public state: TState;
     public context: PotterContext<TRepository,TModel>;
+
+    public get broadcastListeners(): Listener<PotterContext<TRepository,TModel>>[]{
+        return this.shuttler.broadcastListeners;
+    }
+
+    public get hasBroadcastListeners(): boolean {
+        return this.shuttler.hasBroadcastListeners;
+    }
 
     constructor(repository: TRepository, model: TModel, state: TState){
         this.context = new PotterContext<TRepository,TModel>(repository,model);

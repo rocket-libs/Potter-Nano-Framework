@@ -3332,10 +3332,10 @@ shellwords@^0.1.1:
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
 
-shuttlerjs@^1.1.9:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/shuttlerjs/-/shuttlerjs-1.1.9.tgz#fb42e2141cfa58e0cf612d2704899f8caa1036c9"
-  integrity sha512-vbaDBo2TInQZQHEuIye0edzFUbZZrL7z+LZP9KxZ9jRwsp2W+iuM1Kshf4+ArXxXFIVwIz81KIS3EfyOKVQhMA==
+shuttlerjs@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/shuttlerjs/-/shuttlerjs-1.2.1.tgz#0f9ab57ab17f6b0815bc8d32fe8e3b87790d97ef"
+  integrity sha512-lqVtqn1lOU/KTTTeMFBM3DeImcxV8VpPmzrgP+z+QWPuh3kg/3a8pmuvHyJ1JIUHINkx3kDqHpzgH5uIZoGLWw==
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.3"
