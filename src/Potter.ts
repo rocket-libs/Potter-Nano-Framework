@@ -1,7 +1,6 @@
 import PotterState from "./PotterState";
 import Shuttler from "shuttlerjs";
 import { PotterContext } from "./PotterContext";
-import { Listener } from "shuttlerjs/dist/Shuttler";
 
 
 export interface IPotter<TRepository,TModel>{
@@ -22,13 +21,7 @@ export default abstract class Potter<TRepository,TModel,TState extends PotterSta
         this.shuttler = new Shuttler<PotterContext<TRepository,TModel>>(this.state.context);
     }
 
-    /**
-     * Returns an array containing all the listeners subscribing to changes
-     */
-    public get broadcastListeners(): Listener<PotterContext<TRepository,TModel>>[]{
-        return this.shuttler.broadcastListeners;
-    }
-
+    
     /**
      * Returns a value indicating whether or not any listener is subscribing to changes
      */
